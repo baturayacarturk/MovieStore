@@ -1,0 +1,12 @@
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\bin\Debug\net7.0\Core.CrossCuttingConcerns.deps.json
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\bin\Debug\net7.0\Core.CrossCuttingConcerns.pdb
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\Core.CrossCuttingConcerns.csproj.AssemblyReference.cache
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\Core.CrossCuttingConcerns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\Core.CrossCuttingConcerns.AssemblyInfoInputs.cache
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\Core.CrossCuttingConcerns.AssemblyInfo.cs
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\Core.CrossCuttingConcerns.csproj.CoreCompileInputs.cache
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\Core.CrossCuttingConcerns.dll
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\refint\Core.CrossCuttingConcerns.dll
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\Core.CrossCuttingConcerns.pdb
+C:\Users\batur\source\repos\MovieStore\MovieStore.Core\Core.CrossCuttingConcerns\obj\Debug\net7.0\ref\Core.CrossCuttingConcerns.dll
