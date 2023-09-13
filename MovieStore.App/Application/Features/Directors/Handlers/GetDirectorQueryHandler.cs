@@ -22,7 +22,7 @@ namespace Application.Features.Directors.Handlers
         public async Task<GetDirectorQueryViewModel> Handle(GetDirectorQuery request, CancellationToken cancellationToken)
         {
             var id = EncryptionService.Decrypt(request.Id);
-            await DirectorMustExist(id);
+            await MustExistsCheckWithId(id);
             Director director = await Repository.GetWithInclude(x => x.Id == id, x => x.ProducedMovies);
             GetDirectorQueryViewModel response = new()
             {

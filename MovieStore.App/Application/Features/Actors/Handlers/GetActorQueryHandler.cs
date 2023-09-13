@@ -24,7 +24,7 @@ namespace Application.Features.Actors.Handlers
         public async Task<GetActorQueryViewModel> Handle(GetActorQuery request, CancellationToken cancellationToken)
         {
             int id = EncryptionService.Decrypt(request.Id);
-            await ActorMustExist(id);
+            await MustExistsCheckWithId(id);
 
             var actor = await Repository.GetWithInclude(x=>x.Id== id, x=>x.Movies);
             GetActorQueryViewModel response = new()

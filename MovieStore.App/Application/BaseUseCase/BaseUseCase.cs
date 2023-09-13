@@ -18,6 +18,9 @@ namespace Application.BaseUseCase
         {
             Repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
-      
+        public virtual Task MustExistsCheckWithId(int id)
+        {
+            return Task.CompletedTask;
+        }
     }
 }

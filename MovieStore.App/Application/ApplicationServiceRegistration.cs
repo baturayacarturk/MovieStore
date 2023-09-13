@@ -1,4 +1,5 @@
 ﻿using Application.Features.Actors.Business;
+using Application.Features.Directors.Business;
 using Application.Services.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,6 +17,8 @@ namespace Application
         {
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             services.AddScoped<ActorUseCase>();
+            services.AddScoped<DirectorUseCase>();
+            
             return services;
         }
     }

@@ -9,6 +9,6 @@ namespace Application.Features.Actors.Models
 {
     public class GetListActorQueryViewModel
     {
-        public ICollection<GetListActorQueryDto> Actors{ get; set; }=new List<GetListActorQueryDto>();  
+        public ICollection<GetListActorQueryDto> ActorsDto{ get; set; }=new List<GetListActorQueryDto>();  
     }
 }

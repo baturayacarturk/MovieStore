@@ -25,7 +25,7 @@ namespace Application.Features.Directors.Handlers
         public async Task<DeletedDirectorViewModel> Handle(DeleteDirectorCommand request, CancellationToken cancellationToken)
         {
             var id = EncryptionService.Decrypt(request.Id);
-            await DirectorMustExist(id);
+            await MustExistsCheckWithId(id);
             var director = await Repository.Get(x=>x.Id==id);
             var result = await Repository.DeleteAsync(director);
             DeletedDirectorViewModel response = new()

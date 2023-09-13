@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Application.Features.SharedDtos;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace Application.Features.Actors.Dtos
         public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public ICollection<Movie> Movies { get; set; } = new List<Movie>();
+        public ICollection<GetListActorMovieQueryDto> Movies { get; set; } = new List<GetListActorMovieQueryDto>();
+
     }
 }

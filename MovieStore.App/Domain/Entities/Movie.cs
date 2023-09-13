@@ -16,9 +16,9 @@ namespace Domain.Entities
         public int DirectorId { get; set; }
         [JsonIgnore]
         public Director Director { get; set; }
-        public int CustomerId { get; set; }
+        public int? CustomerId { get; set; }
         [JsonIgnore]
-        public Customer Customer { get; set; }
+        public Customer? Customer { get; set; }
         public ICollection<Actor> Actors { get; set; } = new List<Actor>();
         public int Price { get; set; }
         public bool IsActive { get; set; }

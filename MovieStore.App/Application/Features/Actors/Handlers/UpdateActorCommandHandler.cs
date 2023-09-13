@@ -22,7 +22,7 @@ namespace Application.Features.Actors.Handlers
         public async Task<UpdatedActorViewModel> Handle(UpdateActorCommand request, CancellationToken cancellationToken)
         {
             int id = EncryptionService.Decrypt(request.Id);
-            await ActorMustExist(id);
+            await MustExistsCheckWithId(id);
             var actor = await Repository.GetWithInclude(x=>x.Id==id, x => x.Movies);
             var originalFirstName= actor.FirstName;
             var originalLastName= actor.LastName;   

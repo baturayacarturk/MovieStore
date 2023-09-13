@@ -26,7 +26,7 @@ namespace Application.Features.Directors.Handlers
         public async Task<UpdatedDirectorViewModel> Handle(UpdateDirectorCommand request, CancellationToken cancellationToken)
         {
             int id = EncryptionService.Decrypt(request.Id);
-            await DirectorMustExist(id);
+            await MustExistsCheckWithId(id);
             var director = await Repository.GetWithInclude(x => x.Id == id, x => x.ProducedMovies);
             var originalFirstName = director.FirstName;
             var originalLastName = director.LastName;

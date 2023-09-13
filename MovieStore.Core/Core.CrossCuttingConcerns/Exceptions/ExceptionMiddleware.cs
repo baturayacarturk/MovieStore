@@ -45,7 +45,7 @@ namespace Core.CrossCuttingConcerns.Exceptions
             return context.Response.WriteAsync(new ProblemDetails
             {
                 Status = StatusCodes.Status500InternalServerError,
-                Type = "https://example.com/baturayacarturk/internal",
+                Type = context.Request.Path.HasValue ? context.Request.Path.ToString() : "Baturay Error",
                 Title = "Internal exception",
                 Detail = ex.Message,
                 Instance = ""
@@ -59,7 +59,7 @@ namespace Core.CrossCuttingConcerns.Exceptions
             return context.Response.WriteAsync(new BusinessProblemDetails
             {
                 Status = StatusCodes.Status400BadRequest,
-                Type = "https://example.com/baturayacarturk/business",
+                Type = context.Request.Path.HasValue ? context.Request.Path.ToString() : "Baturay Error",
                 Title = "Business exception",
                 Detail = ex.Message,
                 Instance = ""

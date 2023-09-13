@@ -15,7 +15,7 @@ namespace Application.Features.Directors.Business
         public DirectorUseCase(IDirectorRepository directorRepository) : base(directorRepository) 
         { 
         }
-        public async Task DirectorMustExist(int id)
+        public override async Task MustExistsCheckWithId(int id)
         {
             var directorExists = await Repository.Get(x => x.Id==id);
             if (directorExists is null) throw new BusinessException("Director is not exists.");

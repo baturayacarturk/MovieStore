@@ -2,6 +2,7 @@
 using Application.Features.Actors.Dtos;
 using Application.Features.Actors.Models;
 using Application.Features.Actors.Queries;
+using Application.Features.SharedDtos;
 using Application.Services.Repositories;
 using Core.CrossCuttingConcerns.Security.EncryptPrimaryKey;
 using MediatR;
@@ -33,9 +34,17 @@ namespace Application.Features.Actors.Handlers
                     Id = EncryptionService.Encrypt(actor.Id),
                     FirstName = actor.FirstName,
                     LastName = actor.LastName,
-                    Movies = actor.Movies,
+                    Movies = actor.Movies.Select(movie => new GetListActorMovieQueryDto
+                    {
+                        DirectorId = EncryptionService.Encrypt(movie.DirectorId),
+                        Id = EncryptionService.Encrypt(movie.Id),
+                        IsActive = movie.IsActive,
+                        Name = movie.Name,
+                        Price = movie.Price,
+                        Type = movie.Type,
+                    }).ToList(),
                 };
-                response.Actors.Add(actorDto);
+                response.ActorsDto.Add(actorDto);
 
             }
             return response;

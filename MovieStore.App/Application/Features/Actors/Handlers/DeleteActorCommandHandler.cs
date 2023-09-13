@@ -25,7 +25,7 @@ namespace Application.Features.Actors.Handlers
         public async Task<DeletedActorViewModel> Handle(DeleteActorCommand request, CancellationToken cancellationToken)
         {
             int id = EncryptionService.Decrypt(request.Id);
-            await ActorMustExist(id);
+            await MustExistsCheckWithId(id);
             var actor = await Repository.Get(x=>x.Id== id);
             var result = await Repository.DeleteAsync(actor);
             DeletedActorViewModel response = new()

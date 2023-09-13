@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.Configuration;
@@ -25,8 +26,8 @@ namespace Persistence.Context
         {
             Configuration = configuration;
         }
-        
-     
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -39,7 +40,13 @@ namespace Persistence.Context
                     .WithMany()
                     .HasForeignKey(o => o.MovieId)
                     .OnDelete(DeleteBehavior.Restrict);
-            
+            modelBuilder.Entity<Movie>()
+        .Property(e => e.Type)
+        .HasConversion(
+            v => v.ToString(),
+            v => (MovieType)Enum.Parse(typeof(MovieType), v)
+        );
+
         }
 
     }
