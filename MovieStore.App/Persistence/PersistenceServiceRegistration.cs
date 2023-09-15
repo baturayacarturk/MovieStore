@@ -23,6 +23,7 @@ namespace Persistence
             services.AddScoped<IDirectorRepository, DirectorRepository>();
             services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }
     }

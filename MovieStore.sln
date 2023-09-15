@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "MovieSt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCuttingConcerns", "MovieStore.Core\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj", "{029DDF70-28BD-4CA1-AA0F-8D4E680CC934}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "MovieStore.App\Domain\Domain.csproj", "{5198643E-F819-49BF-8B73-78A3379519F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "MovieStore.App\Domain\Domain.csproj", "{5198643E-F819-49BF-8B73-78A3379519F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

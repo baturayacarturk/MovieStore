@@ -11,7 +11,8 @@ namespace Domain.Entities
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public ICollection<Order> Orders { get; set; } = new List<Order>();
-        public ICollection<Movie> PurchasedMovies { get; set; } = new List<Movie>();
+        public bool IsActive { get; set; }
+        public ICollection<Order>? Orders { get; set; } = new List<Order>();
+        public ICollection<Movie>? PurchasedMovies { get; set; } = new List<Movie>();
     }
 }

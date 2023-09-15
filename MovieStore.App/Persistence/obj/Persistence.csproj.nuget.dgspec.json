@@ -50,9 +50,25 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.1.1, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.21.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.21.0, )"
             }
           },
           "imports": [
@@ -242,6 +258,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -350,7 +376,17 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\batur\\source\\repos\\MovieStore\\MovieStore.App\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\batur\\source\\repos\\MovieStore\\MovieStore.App\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\batur\\source\\repos\\MovieStore\\MovieStore.Core\\Application\\Core.Application.csproj": {
+                "projectPath": "C:\\Users\\batur\\source\\repos\\MovieStore\\MovieStore.Core\\Application\\Core.Application.csproj"
+              },
+              "C:\\Users\\batur\\source\\repos\\MovieStore\\MovieStore.Core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
+                "projectPath": "C:\\Users\\batur\\source\\repos\\MovieStore\\MovieStore.Core\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

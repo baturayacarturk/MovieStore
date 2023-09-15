@@ -1,6 +1,7 @@
 ﻿using Application.Features.Actors.Queries;
 using Application.Features.Directors.Commands;
 using Application.Features.Directors.Queries;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,18 +11,21 @@ namespace WebAPI.Controllers
     public class DirectorController : BaseController
     {
         [HttpPost("CreateDirector")]
+        [Authorize(Policy = "AdminOnly")]
         public async Task<IActionResult> CreateDirector(CreateDirectorCommand command)
         {
             var result = await Mediator.Send(command);
             return Created("", result);
         }
         [HttpPost("UpdateDirector")]
+        [Authorize(Policy = "AdminOnly")]
         public async Task<IActionResult> UpdateDirector(UpdateDirectorCommand command)
         {
             var result = await Mediator.Send(command);
             return Ok(result);
         }
         [HttpPost("DeleteDirector")]
+        [Authorize(Policy = "AdminOnly")]
         public async Task<IActionResult> DeleteDirector(DeleteDirectorCommand command)
         {
             var result = await Mediator.Send(command);

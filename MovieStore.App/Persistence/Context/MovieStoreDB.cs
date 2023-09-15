@@ -19,7 +19,7 @@ namespace Persistence.Context
         public DbSet<Director> Directors { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
-
+        public DbSet<User> Users { get; set; }
 
 
         public MovieStoreDB(IConfiguration configuration, DbContextOptions context) : base(context)

@@ -88,4 +88,9 @@ C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\Co
 C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll
 C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\Core.CrossCuttingConcerns.pdb
 C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\Infrastructure.dll
+C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\Infrastructure.pdb
 C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\obj\Debug\net7.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\batur\source\repos\MovieStore\MovieStore.App\WebAPI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

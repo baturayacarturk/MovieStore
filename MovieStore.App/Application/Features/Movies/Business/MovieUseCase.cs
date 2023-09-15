@@ -21,8 +21,8 @@ namespace Application.Features.Movies.Business
 
         public override async Task MustExistsCheckWithId(int id)
         {
-            var directorExists = await Repository.Get(x => x.Id == id);
-            if (directorExists is null) throw new BusinessException("Movie is not exists.");
+            var movieExists = await Repository.Get(x => x.Id == id);
+            if (movieExists is null) throw new BusinessException("Movie is not exists.");
 
         }
         public async Task MovieShouldNotExists(string name, string directorId)
@@ -37,6 +37,11 @@ namespace Application.Features.Movies.Business
             {
                 await MustExistsCheckWithId(EncryptionService.Decrypt(movie.Id));
             }
+        }
+        public async Task MovieMustActive(int id)
+        {
+            var movie = await Repository.Get(x => x.Id == id);
+            if (!movie.IsActive) throw new BusinessException("Movie is already ordered. Can not proceed");
         }
     }
 }
