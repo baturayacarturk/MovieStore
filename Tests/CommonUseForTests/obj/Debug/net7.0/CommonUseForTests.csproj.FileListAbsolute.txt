@@ -1,0 +1,15 @@
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\bin\Debug\net7.0\CommonUseForTests.deps.json
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\bin\Debug\net7.0\CommonUseForTests.dll
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\bin\Debug\net7.0\CommonUseForTests.pdb
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\bin\Debug\net7.0\Core.CrossCuttingConcerns.pdb
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\CommonUseForTests.csproj.AssemblyReference.cache
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\CommonUseForTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\CommonUseForTests.AssemblyInfoInputs.cache
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\CommonUseForTests.AssemblyInfo.cs
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\CommonUseForTests.csproj.CoreCompileInputs.cache
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\CommonUseForTests.csproj.CopyComplete
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\CommonUseForTests.dll
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\refint\CommonUseForTests.dll
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\CommonUseForTests.pdb
+C:\Users\batur\source\repos\MovieStore\Tests\CommonUseForTests\obj\Debug\net7.0\ref\CommonUseForTests.dll
